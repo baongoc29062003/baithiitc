@@ -1,0 +1,258 @@
+*
+{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+body
+{
+    font-family: sans-serif;
+}
+.nav{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    padding:0 10%;
+    border-bottom: 1px solid rgba(115, 114, 114, 0.2);
+    display: flex;
+    align-items: center;
+    color:#eee;
+    z-index: 11111111111111111;
+    background-color: #1f2538;
+}
+.nav .logo img{
+    width:60px
+}
+.nav ul{
+    padding: 0;
+    margin:0;
+    list-style: none;
+    margin-left:50px;
+    display: flex;
+   align-items: center;
+}
+.nav ul li{
+    padding:0 50px;
+    font-size: 15px;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+.tofixed{
+    position: fixed;
+    top:0;
+    color:#555;
+    background-color:#1f2538 ;
+animation:showfixed 1s ease-in-out 1 forwards
+}
+@keyframes showfixed{
+    from{
+        top:-100px;
+    }
+}
+#hero
+{
+    
+    height: 90vh;
+    width:100%;
+    background-size: cover;
+    padding:0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: center;
+    
+    
+}
+
+
+#hero button
+{
+    background-image: url(./img/img/button.png);
+    background-color: transparent;
+    border:0;
+    padding: 14px 80px 14px 65px;
+    cursor:pointer;
+    font-weight: 700;
+    font-size: 15px;
+}
+#courses
+{
+    text-align: center;
+    padding:40px 80px;
+
+}
+#courses .cour-container
+{
+    display: flex;
+   justify-content: space-between;
+    padding-top:20px;
+    flex-wrap: wrap;
+}
+#courses .cour, .shadow
+{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.02);
+    margin:15px 0;
+    transition: 0.2s ease;
+}
+#courses .cour:hover
+{
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.06);
+
+}
+#courses .cour img
+{
+    width:100%;
+    height:200px;
+    border-radius: 15px;
+    ;
+}
+
+#courses .cour .des h3
+{
+    padding-top: 7px ;
+    color:#1a1a1a;
+    font-size: 18px;
+}
+#courses .cour .des i, .star
+{
+    font-size: 15px;
+    color:rgb(243, 181, 25);
+}
+#courses .cour .des button, .btn
+{
+    padding: 5px 10px ;
+    background-color: #83d0e7;
+    border:0;
+    border-radius: 15px;
+    cursor:pointer;
+    font-weight: 500;
+    font-size: 15px;
+    
+    
+}
+#courses .cour .des button:hover, .btn:hover
+{
+    background-color: #108bb0;
+    color:white;
+}
+
+
+#cour-detail .single-img
+{
+    width: 40%;
+    margin-left: 50px;
+    
+}
+.small-img-group
+{
+    display: flex;
+    padding-right: 10px;
+}
+.small-img-col
+{
+   
+    cursor: pointer;
+    padding-right: 10px;
+}
+.small-img-col img
+{
+    height: 100px;
+    border: 2px solid red;
+}
+
+#cour-detail
+{
+    display: flex;
+    margin-top: 50px;
+
+}
+
+#cour-detail  .small-img-group
+{
+    padding-top: 10px;
+}
+#cour-detail .single-detail
+{  
+    display: block;
+    width: 50%;
+    padding-left: 40px;
+    padding-top: 10px;
+}
+#cour-detail .single-detail h4
+{
+    padding: 15px 0 15px 0px;
+    font-size: 30px;
+    
+}
+
+#comment
+{
+    width: 1012px;
+    height:478px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#comment h2
+{
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 32px;
+}
+#comment-body
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:1000px;
+    height:400px;
+    list-style: none;
+    overflow: hidden;
+}
+#list-comment
+{
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    transition: 0.5s;
+ 
+}
+#list-comment .item
+{
+    width: 100%;
+    height: 100%;
+    background: #362f2f;
+    border-radius: 20px;
+    padding-top: 50px;
+}
+#list-comment .item .avatar, #list-comment .item .star
+{
+    text-align: center;
+    margin-top: 13px;
+}
+#list-comment .item .avatar img 
+{
+    border-radius: 50%;
+    height:100px;
+}
+#list-comment .item  .name
+{
+    text-align: center;
+    font-weight: bold;
+    color:white;
+}
+#list-comment .item .text
+{
+    padding: 0px 50px;
+    color:white;
+}
+
