@@ -1,8 +1,17 @@
 *
 {
+  
     padding: 0;
     margin:0;
     box-sizing: border-box;
+}
+html,body{
+    padding : 0px;
+    box-sizing: border-box;
+    width: 1430px ;
+    height: 100%;
+    font-family: 'Roboto Mono', monospace;
+   margin: auto;
 }
 body
 {
